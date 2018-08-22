@@ -4,18 +4,20 @@ class Song
   @@genres = []
   @@genre_count = 0
 
-#  def initialize(name,artist,genre)
-#    @@count += 1
-#    @@artist << artist unless @@artist.include?(artist)
-#    @@genre << genre unless @@genre.include?(genre)
-#    @@genre_count += 1
-#  end
+  attr_accessor :name, :artist, :genre
 
-  def new=(name,artist,genre)
+  def initialize(name,artist,genre)
     @@count += 1
     @@artist << artist unless @@artist.include?(artist)
     @@genre << genre unless @@genre.include?(genre)
     @@genre_count += 1
   end
+
+#  def new=(name,artist,genre)
+#    @@count += 1
+#    @@artist << artist unless @@artist.include?(artist)
+#    @@genre << genre unless @@genre.include?(genre)
+#    @@genre_count += 1
+#  end
 
 end
