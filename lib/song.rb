@@ -20,8 +20,9 @@ class Song
     @@count
   end
 
-  def self.genre
-    @@
+  def self.genres
+    @@genres
+  end
 
 #  def new=(name,artist,genre)
 #    @@count += 1
