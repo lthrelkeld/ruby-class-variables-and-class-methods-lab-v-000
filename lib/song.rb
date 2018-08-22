@@ -30,7 +30,6 @@ class Song
   end
 
   def self.genre_count
-    genres = @@genres
     genre_count_hash = {}
     @@genres.each do |genre|
         if genre_count_hash.keys.include?(genre)
